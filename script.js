@@ -1,7 +1,7 @@
 function minDate(dates) {
   //write you code here
 	function check(d1,d2){
-		int i=0;
+		var i=0;
 		while(i<d1.length){
 			if(d1[i]<d2[i]){
 				return d1;
