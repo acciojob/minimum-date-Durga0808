@@ -1,5 +1,23 @@
 function minDate(dates) {
   //write you code here
+	function check(d1,d2){
+		int i=0;
+		while(i<d1.length()){
+			if(d1[i]<d2[i]){
+				return d1;
+			}else if(d1[i]>d2[i]){
+				return d2;
+			}else{
+				i++;
+			}
+		}
+		return d1;
+	}
+	var d1=dates[0];
+	for(var i=1;i<dates.length;i++){
+		d1=check(d1,dates[i]);
+	}
+	return d1;
 }
 
 // Do not change the code
